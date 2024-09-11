@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+               Hey their....
+                </a>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div> <!-- Hamburger Icon for Mobile -->
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section class="welcome">
+        <div class="welcome-content">
+            <div class="photo-container">
+                <img src="WhatsApp_Image_2024-09-10_at_09.24.56_a8946242-removebg-preview.png" alt="Your Photo" class="photo">
+            </div>
+            <div class="text-content">
+                <h1>Hi, I'm Kuzhanthaivasan</h1>
+                <p>Front-End Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>Hello! I'm R. Kuzhanthaivasan, a passionate Front-End Developer and Prompt Engineer with a BSc in Computer Science. I specialize in creating interactive and responsive web applications using modern technologies, and I have knowledge in Python and SQL.</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">🎓</div>
+                    <div class="timeline-content">
+                        <h3>Education</h3>
+                        <p>Completed my BSc in Computer Science, focusing on web development, programming, and data management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">💼</div>
+                    <div class="timeline-content">
+                        <h3>Start of Career</h3>
+                        <p>Started exploring front-end technologies and working on various personal and academic projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🚀</div>
+                    <div class="timeline-content">
+                        <h3>Current Role</h3>
+                        <p>Currently building skills in front-end development, Python, and SQL, while looking for opportunities to grow in the tech industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" onclick="showDetails('login page', 'Developed a responsive signup and sign-in system using HTML, CSS, and JavaScript, featuring user authentication, form validation, and interactive design for seamless account management.', 'https://kuzhanthaivasan.github.io/login/')">
+                <img src="Screenshot (25).png" alt="Project 1" class="project-image">
+                <div class="card-header">
+                    <h3>login page</h3>
+                </div>
+                <div class="card-content">
+                    <p>To brief explanation for that click here</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="project-card" onclick="showDetails('Basic calculator', 'Created a basic calculator using HTML, CSS, and JavaScript, featuring essential arithmetic operations with a user-friendly interface and real-time calculation results.', 'https://kuzhanthaivasan.github.io/calculator/')">
+                <img src="Screenshot (26).png" alt="Project 2" class="project-image">
+                <div class="card-header">
+                    <h3>Basic calculator</h3>
+                </div>
+                <div class="card-content">
+                    <p>To brief explanation for that click here</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="project-card" onclick="showDetails('FLAMES game', 'Developed a FLAMES game using HTML, CSS, and JavaScript, allowing users to determine compatibility through a fun, interactive interface with animated elements and dynamic results.', 'https://kuzhanthaivasan.github.io/flames-game/')">
+                <img src="Screenshot (27).png" alt="Project 3" class="project-image">
+                <div class="card-header">
+                    <h3>FLAMES game</h3>
+                </div>
+                <div class="card-content">
+                    <p>To brief explanation for that click here</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+            <div class="project-card" onclick="showDetails('Project 4', 'Designed a simple tenses educational tool with HTML and CSS, providing clear, visually appealing examples of different verb tenses for learning and reference.', 'https://kuzhanthaivasan.github.io/basic-tense/')">
+                <img src="Screenshot (28).png" alt="Project 4" class="project-image">
+                <div class="card-header">
+                    <h3>Basic Tense</h3>
+                </div>
+                <div class="card-content">
+                    <p>To brief explanation for that click here</p>
+                    <button class="view-more">View More</button>
+                </div>
+            </div>
+        </div>
+        <div id="project-details" class="project-details">
+            <div class="details-content">
+                <span class="close-btn" onclick="hideDetails()">✖</span>
+                <h3 id="project-title">Project Title</h3>
+                <p id="project-description">Detailed information about the project will go here.</p>
+                <a id="project-link" href="#" target="_blank" class="view-more">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="meter">
+                    <span style="width: 99%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="meter">
+                    <span style="width: 95%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="meter">
+                    <span style="width: 85%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="meter">
+                    <span style="width: 75%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="meter">
+                    <span style="width: 80%;"></span>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Prompt Engineering</h3>
+                <div class="meter">
+                    <span style="width: 100%;"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-wrapper">
+            <h2 class="contact-heading">Get in Touch</h2>
+            <p class="contact-description">I’d love to hear from you. Whether you have a question, a project in mind, or just want to chat, feel free to reach out!</p>
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="contact-info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+91 6381698311">+91 6381698311</a></p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Address</h3>
+                        <p>Velachery, Chennai</p>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">
+                        <a href="https://www.linkedin.com/in/kuzhanthaivasan-r-55193b260/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="info-text">
+                        <h3>LinkedIn</h3>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">
+                        <a href="https://github.com/kuzhanthaivasan" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="info-text">
+                        <h3>GitHub</h3>
+                    </div>
+                </div>
+                <div class="contact-info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="info-text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:vasanravi12032004@gmail.com">vasanravi12032004@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="button">
+        <center> <button id="revealBtn">View Resume</button>
+            <div id="resumeContainer" class="hidden">
+                <!-- You can replace the content below with your resume details or a PDF link -->
+                <h2>My Resume</h2>
+                <p>Here are the details of my resume...</p>
+                <!-- Example PDF link -->
+                <a href="Black and White Simple Business School Graduate Corporate Resume (4).pdf" target="_blank">Download PDF</a>
+                <br>
+                <br>
+                
+            </div></center>
+        </div>
+    
+    </section>
+    
+    
+   
+    
+    
+</body>
+</html>
